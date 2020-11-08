@@ -17,7 +17,7 @@ def anonymous(ip):
         ftp.quit()
         return True
     except Exception as e:
-        print("\n[-] Failed to login. \n[-] Target is not be vulnerable."+str(e))
+        print("\n[-] Failed to login. \n[-] Could not login..."+str(e))
         return False
 
 if len(sys.argv) < 2:
